@@ -62,7 +62,7 @@ export const aboutSectionData: AboutSectionProps = {
     subtitle: 'About us',
     title: 'Elevating Gaming Experiences',
     description:
-      'At FoxHound Games, we are dedicated to revolutionizing online slots by seamlessly integrating exceptional design with innovative gameplay. Emphasizing artistic creativity, we strive to enhance player engagement through visually impressive and captivating games that not only meet but set new industry standards. Our goal is to deliver superior gaming experiences that both intrigue and satisfy players ',
+      'At Foxhound Games, we are dedicated to revolutionizing online slots by seamlessly integrating exceptional design with innovative gameplay. Emphasizing artistic creativity, we strive to enhance player engagement through visually impressive and captivating games that not only meet but set new industry standards. Our goal is to deliver superior gaming experiences that both intrigue and satisfy players ',
   },
   keyPoints: [
     {
