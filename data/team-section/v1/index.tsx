@@ -14,7 +14,7 @@ export const teamSectionData: TeamSectionProps = {
       },
 
       name: 'Mortal Oath',
-      about: 'Coming Soon...',
+      about: 'Coming Soon..',
     },
   ],
 };
