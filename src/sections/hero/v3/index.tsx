@@ -1,13 +1,12 @@
 'use client';
 
-// HeroSection.tsx
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import bannerImage from 'public/assets/images/hero/banner.png';
-import mobileBannerImage from 'public/assets/images/hero/banner-mobile.png';
+import mobileBannerImage from 'public/assets/images/hero/mobilebanner.png';
 
 interface BreadcrumbItem {
   href?: string;
@@ -39,14 +38,16 @@ export function HeroSection({ title, breadcrumbItems }: HeroSectionProps) {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
-    <section className="section-padding-primary relative flex min-h-[450px] items-center">
+    <section
+      className={`section-padding-primary relative flex items-center ${isMobile ? 'min-h-[350px]' : 'min-h-[450px]'}`}
+    >
       <Image
         priority
         src={isMobile ? mobileBannerImage.src : bannerImage.src}
         alt={`${process.env.NEXT_PUBLIC_SITE_NAME} banner ${isMobile ? 'mobile' : 'desktop'}`}
-        fill
-        sizes="(max-width: 768px) 100vw, (min-width: 769px) 50vw"
-        className="pointer-events-none object-cover md:object-contain lg:object-cover"
+        layout="fill"
+        objectFit="cover"
+        className="pointer-events-none object-cover"
       />
 
       <span className="absolute inset-0 bg-gradient-1 from-white/0 to-white dark:from-accent-900/0 dark:to-accent-900"></span>
