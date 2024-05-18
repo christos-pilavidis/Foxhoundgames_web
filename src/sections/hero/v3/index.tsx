@@ -6,7 +6,7 @@ import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import bannerImage from 'public/assets/images/hero/banner.png';
-import mobileBannerImage from 'public/assets/images/hero/mobilebanner.png';
+import mobileBannerImage from 'public/assets/images/hero/banner800x800.png';
 
 interface BreadcrumbItem {
   href?: string;
